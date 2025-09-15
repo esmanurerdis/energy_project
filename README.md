@@ -1,87 +1,101 @@
-# 📊 Enerji Tüketimi Tahmin Projesi (PJME Hourly)
+📊 PJME Hourly Energy Forecasting Project
 
-Bu proje, **ABD PJM bölgesine ait saatlik enerji tüketimi verilerini** kullanarak **gelecek enerji talebini tahmin eden** bir makine öğrenmesi uygulamasıdır.  
-Veri analizi, özellik mühendisliği, model eğitimi, hiperparametre optimizasyonu ve Türkçe raporlama adımlarını kapsamaktadır.
+This project is a machine learning application to predict future energy demand using hourly energy consumption data from the PJM region in the USA.
+It covers data analysis, feature engineering, model training, hyperparameter optimization, and reporting (in Turkish).
 
----
+🚀 Project Features
 
-## 🚀 Proje Özellikleri
-- **Veri Ön İşleme & EDA**: Eksik verilerin analizi, zaman serisi istatistikleri, görselleştirme
-- **Özellik Mühendisliği**: Zaman temelli, lag ve rolling özellikler
-- **Modelleme**: Linear Regression ve XGBoost
-- **Model Doğrulama**: K-Fold cross-validation
-- **Hiperparametre Optimizasyonu**: GridSearchCV ile XGBoost parametre araması
-- **Tahmin**: Gelecek 7 gün için saatlik enerji talebi tahmini
-- **Raporlama**: Türkçe metrikler ve görseller ile rapor oluşturma
+Data Preprocessing & EDA: Analysis of missing data, time series statistics, and visualization
 
----
+Feature Engineering: Time-based, lag, and rolling features
 
-## 📂 Proje Yapısı
-```bash
+Modeling: Linear Regression and XGBoost
+
+Model Validation: K-Fold cross-validation
+
+Hyperparameter Optimization: GridSearchCV for XGBoost parameter tuning
+
+Prediction: Hourly energy demand forecast for the next 7 days
+
+Reporting: Report generation with visualizations
+
+📂 Project Structure
 energy_project/
 ├── data/
-│   └── PJME_hourly.csv           # Ham veri seti
+│   └── PJME_hourly.csv           # Raw dataset
 ├── models/
-│   └── xgb_pjme_best.pkl         # Eğitilmiş XGBoost modeli
+│   └── xgb_pjme_best.pkl         # Trained XGBoost model
 ├── outputs/
-│   ├── tahminler.csv             # Tahmin sonuçları
-│   ├── rapor_gercek_vs_tahmin_*.png
-│   ├── rapor_hata_zaman_*.png
-│   ├── rapor_hata_hist_*.png
-├── main.py                       # Model eğitimi & tahmin üretimi
+│   ├── predictions.csv           # Forecast results
+│   ├── report_actual_vs_pred_*.png
+│   ├── report_error_time_*.png
+│   ├── report_error_hist_*.png
+├── main.py                       # Model training & prediction
 ├── model_validation.py           # Cross-validation
-├── hyperparam_tuning.py          # Hiperparametre optimizasyonu
-├── report.py                     # Rapor oluşturma
-├── requirements.txt              # Bağımlılık listesi
-└── README.md                     # Proje açıklaması
-```
+├── hyperparam_tuning.py          # Hyperparameter tuning
+├── report.py                     # Report generation
+├── requirements.txt              # Dependencies
+└── README.md                     # Project description
 
----
+📊 Libraries Used
 
-## 📊 Kullanılan Kütüphaneler
-- Python 3.9+
-- pandas
-- numpy
-- matplotlib
-- scikit-learn
-- xgboost
-- joblib
+Python 3.9+
 
----
+pandas
 
-## 🔧 Kurulum
-```bash
-# Bağımlılıkları yükle
+numpy
+
+matplotlib
+
+scikit-learn
+
+xgboost
+
+joblib
+
+🔧 Setup
+# Install dependencies
 pip install -r requirements.txt
 
-# Modeli eğit ve 7 günlük tahmini üret
+# Train the model and generate 7-day forecast
 python main.py
 
-# Cross-validation ile doğrulama
+# Validate model with cross-validation
 python model_validation.py
 
-# Hiperparametre optimizasyonu (opsiyonel)
+# Hyperparameter tuning (optional)
 python hyperparam_tuning.py
 
-# Türkçe rapor üret
+# Generate report
 python report.py
-```
 
----
+📊 Dataset
 
-## 📊 Veri Seti
-- **Kaynak:** [Kaggle - PJME Hourly Energy Consumption](https://www.kaggle.com/datasets/robikscube/hourly-energy-consumption)
-- **Kapsam:** 2002–2018 yılları arasında PJM bölgesinde saatlik enerji tüketimi (MW cinsinden)
+Source: Kaggle - PJME Hourly Energy Consumption
 
----
+Coverage: Hourly energy consumption (MW) in PJM from 2002 to 2018
 
-## 💡 Notlar
-- Proje, hem **Data Science** hem de **Machine Learning Engineer** portföyü için uygundur.
-- Daha yüksek performans için farklı modeller (LightGBM, Prophet vb.) denenebilir.
-- Tahminler, enerji planlaması ve talep yönetimi gibi alanlarda kullanılabilir.
+💡 Notes
 
----
+The project is suitable for both Data Science and Machine Learning Engineer portfolios.
 
-## 🏷 Lisans
-Bu proje MIT Lisansı ile sunulmaktadır.  
-Dilediğiniz gibi kullanabilir ve geliştirebilirsiniz.
+Different models (LightGBM, Prophet, etc.) can be tried for higher performance.
+
+Forecasts can be useful for energy planning and demand management.
+
+🏷 License
+
+This project is licensed under the MIT License.
+Feel free to use and improve it as you wish.
+
+🇹🇷 Türkçe Summary
+
+Bu proje, ABD PJM bölgesine ait saatlik enerji tüketimi verilerini kullanarak gelecek enerji talebini tahmin eden bir makine öğrenmesi uygulamasıdır.
+
+Veri analizi, özellik mühendisliği, model eğitimi, hiperparametre optimizasyonu ve raporlama adımlarını kapsamaktadır.
+
+Modelleme Linear Regression ve XGBoost ile yapılmıştır.
+
+Cross-validation ve GridSearchCV kullanılarak model doğrulaması ve parametre optimizasyonu gerçekleştirilmiştir.
+
+Tahmin sonuçları ve raporlar görselleştirilmiştir.
