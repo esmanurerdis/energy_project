@@ -5,6 +5,9 @@
 
 ---
 
+![Energy Forecast Overview](outputs/all_in_one.png)
+
+
 ## 🚀 Project Features
 
 • Data Preprocessing & EDA: Analysis of missing data, time series statistics, and visualization
