@@ -1,6 +1,7 @@
 ## 📊 PJME Hourly Energy Forecasting Project
 
 • This project is a machine learning application to predict future energy demand using hourly energy consumption data from the PJM region in the USA.
+
 • It covers data analysis, feature engineering, model training, hyperparameter optimization, and reporting (in Turkish).
 
 ---
@@ -26,7 +27,7 @@
 
 ---
 
-# 📂 Project Structure
+## 📂 Project Structure
 ```python
 
 energy_project/
@@ -125,12 +126,12 @@ Feel free to use and improve it as you wish.
 
 ## 🇹🇷 Türkçe Summary
 
-Bu proje, ABD PJM bölgesine ait saatlik enerji tüketimi verilerini kullanarak gelecek enerji talebini tahmin eden bir makine öğrenmesi uygulamasıdır.
+• Bu proje, ABD PJM bölgesine ait saatlik enerji tüketimi verilerini kullanarak gelecek enerji talebini tahmin eden bir makine öğrenmesi uygulamasıdır.
 
-Veri analizi, özellik mühendisliği, model eğitimi, hiperparametre optimizasyonu ve raporlama adımlarını kapsamaktadır.
+• Veri analizi, özellik mühendisliği, model eğitimi, hiperparametre optimizasyonu ve raporlama adımlarını kapsamaktadır.
 
-Modelleme Linear Regression ve XGBoost ile yapılmıştır.
+• Modelleme Linear Regression ve XGBoost ile yapılmıştır.
 
-Cross-validation ve GridSearchCV kullanılarak model doğrulaması ve parametre optimizasyonu gerçekleştirilmiştir.
+• Cross-validation ve GridSearchCV kullanılarak model doğrulaması ve parametre optimizasyonu gerçekleştirilmiştir.
 
-Tahmin sonuçları ve raporlar görselleştirilmiştir.
+• Tahmin sonuçları ve raporlar görselleştirilmiştir.
