@@ -51,11 +51,17 @@ energy_project/
 ## 📊 Libraries Used
 
 • Python 3.9+
+
 • pandas
+
 • numpy
+
 • matplotlib
+
 • scikit-learn
+
 • xgboost
+
 • joblib
 
 ---
