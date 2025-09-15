@@ -25,6 +25,7 @@ Reporting: Report generation with visualizations
 
 # 📂 Project Structure
 '''python
+
 energy_project/
 ├── data/
 │   └── PJME_hourly.csv           # Raw dataset
@@ -41,6 +42,7 @@ energy_project/
 ├── report.py                     # Report generation
 ├── requirements.txt              # Dependencies
 └── README.md                     # Project description
+
 '''
 
 ---
