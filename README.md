@@ -1,9 +1,11 @@
-📊 PJME Hourly Energy Forecasting Project
+## 📊 PJME Hourly Energy Forecasting Project
 
-This project is a machine learning application to predict future energy demand using hourly energy consumption data from the PJM region in the USA.
-It covers data analysis, feature engineering, model training, hyperparameter optimization, and reporting (in Turkish).
+•This project is a machine learning application to predict future energy demand using hourly energy consumption data from the PJM region in the USA.
+•It covers data analysis, feature engineering, model training, hyperparameter optimization, and reporting (in Turkish).
 
-🚀 Project Features
+---
+
+## 🚀 Project Features
 
 Data Preprocessing & EDA: Analysis of missing data, time series statistics, and visualization
 
@@ -19,7 +21,10 @@ Prediction: Hourly energy demand forecast for the next 7 days
 
 Reporting: Report generation with visualizations
 
-📂 Project Structure
+---
+
+# 📂 Project Structure
+'''python
 energy_project/
 ├── data/
 │   └── PJME_hourly.csv           # Raw dataset
@@ -36,59 +41,78 @@ energy_project/
 ├── report.py                     # Report generation
 ├── requirements.txt              # Dependencies
 └── README.md                     # Project description
+'''
 
-📊 Libraries Used
+---
 
-Python 3.9+
 
-pandas
+## 📊 Libraries Used
 
-numpy
+• Python 3.9+
+• pandas
+• numpy
+• matplotlib
+• scikit-learn
+• xgboost
+• joblib
 
-matplotlib
+---
 
-scikit-learn
+## 🔧 Setup
 
-xgboost
-
-joblib
-
-🔧 Setup
 # Install dependencies
+'''python
 pip install -r requirements.txt
+'''
 
 # Train the model and generate 7-day forecast
+'''python
 python main.py
+'''
 
 # Validate model with cross-validation
+'''python
 python model_validation.py
+'''
 
 # Hyperparameter tuning (optional)
+'''python
 python hyperparam_tuning.py
+'''
 
 # Generate report
+'''python
 python report.py
+'''
+---
 
-📊 Dataset
+## 📊 Dataset
 
-Source: Kaggle - PJME Hourly Energy Consumption
+• Source: Kaggle - PJME Hourly Energy Consumption
 
-Coverage: Hourly energy consumption (MW) in PJM from 2002 to 2018
+• Coverage: Hourly energy consumption (MW) in PJM from 2002 to 2018
 
-💡 Notes
+---
 
-The project is suitable for both Data Science and Machine Learning Engineer portfolios.
+## 💡 Notes
 
-Different models (LightGBM, Prophet, etc.) can be tried for higher performance.
+• The project is suitable for both Data Science and Machine Learning Engineer portfolios.
 
-Forecasts can be useful for energy planning and demand management.
+• Different models (LightGBM, Prophet, etc.) can be tried for higher performance.
 
-🏷 License
+• Forecasts can be useful for energy planning and demand management.
+
+---
+
+## 🏷 License
 
 This project is licensed under the MIT License.
 Feel free to use and improve it as you wish.
 
-🇹🇷 Türkçe Summary
+---
+
+
+## 🇹🇷 Türkçe Summary
 
 Bu proje, ABD PJM bölgesine ait saatlik enerji tüketimi verilerini kullanarak gelecek enerji talebini tahmin eden bir makine öğrenmesi uygulamasıdır.
 
