@@ -1,30 +1,30 @@
 ## 📊 PJME Hourly Energy Forecasting Project
 
-•This project is a machine learning application to predict future energy demand using hourly energy consumption data from the PJM region in the USA.
-•It covers data analysis, feature engineering, model training, hyperparameter optimization, and reporting (in Turkish).
+• This project is a machine learning application to predict future energy demand using hourly energy consumption data from the PJM region in the USA.
+• It covers data analysis, feature engineering, model training, hyperparameter optimization, and reporting (in Turkish).
 
 ---
 
 ## 🚀 Project Features
 
-Data Preprocessing & EDA: Analysis of missing data, time series statistics, and visualization
+• Data Preprocessing & EDA: Analysis of missing data, time series statistics, and visualization
 
-Feature Engineering: Time-based, lag, and rolling features
+• Feature Engineering: Time-based, lag, and rolling features
 
-Modeling: Linear Regression and XGBoost
+• Modeling: Linear Regression and XGBoost
 
-Model Validation: K-Fold cross-validation
+• Model Validation: K-Fold cross-validation
 
-Hyperparameter Optimization: GridSearchCV for XGBoost parameter tuning
+• Hyperparameter Optimization: GridSearchCV for XGBoost parameter tuning
 
-Prediction: Hourly energy demand forecast for the next 7 days
+• Prediction: Hourly energy demand forecast for the next 7 days
 
-Reporting: Report generation with visualizations
+• Reporting: Report generation with visualizations
 
 ---
 
 # 📂 Project Structure
-'''python
+```python
 
 energy_project/
 ├── data/
@@ -43,7 +43,7 @@ energy_project/
 ├── requirements.txt              # Dependencies
 └── README.md                     # Project description
 
-'''
+```
 
 ---
 
@@ -63,29 +63,29 @@ energy_project/
 ## 🔧 Setup
 
 # Install dependencies
-'''python
+```python
 pip install -r requirements.txt
-'''
+```
 
 # Train the model and generate 7-day forecast
-'''python
+```python
 python main.py
-'''
+```
 
 # Validate model with cross-validation
-'''python
+```python
 python model_validation.py
-'''
+```
 
 # Hyperparameter tuning (optional)
-'''python
+```python
 python hyperparam_tuning.py
-'''
+```
 
 # Generate report
-'''python
+```python
 python report.py
-'''
+```
 ---
 
 ## 📊 Dataset
